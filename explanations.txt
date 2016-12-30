@@ -1,0 +1,10 @@
+1. For this question I found all the possible anagrams of the word and put them into an array, then I check if the anagrams in the array are substrings of the original word. The complexity O(N^3), there are three loops, one taking the length of the word (n-a), other the number of permutations in a word (n-b) and the other the number of permutations (n) so the complexity is (n-a)*(n-b)*n, therefore O(N^3).
+
+2. For this solution I get all the possible palindromes in a word, put them in an array and then check which one is the longest. The complexity is O(N^2), there are two nested loops, one with the length of an enumerator of the original word (n-a) and the other with all the palindromes (n), so n*(n-a), therefore O(N^2).
+
+3. For this solution I transform the input dictionary (the adjacency list) and transform it into an list of lists because they're easy to iterate, then I calculate the MST from that list resulting in one set with the edges and other with the values, then I create a dictionary with that information, this dictionary is the result adjacency list. The complexity is O(N^2), there are two sets of nested loops with complexity equal to n(n-a) where N is the number of nodes, therefore the complexity is given by n(n-a) + n(n-a) = O(N^2).
+
+4. For this answer I calculate all the ancestors of both input nodes and put them in a list, then calculate which of those lists is longer, compare the lists and get which ancestors are common, then of that list of common ancestors calculate which one is the lesser. The complexity is O(N^2), because there is one nested loop with the length of the number of ancestors, so the complexity is n(n-a) = O(N).
+
+5. For this problem, the Node class is given, then I create a linked_list class to be able to create linked lists, then I calculate the position I want to get, and move the current node to that postion and that's the answer. Even though there are several loops, there are no nested loops, so the complexity is O(N).
+ 
